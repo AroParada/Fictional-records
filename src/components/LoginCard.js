@@ -1,32 +1,24 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  View, 
+  Card,
+} from "@aws-amplify/ui-react";
+import { Auth } from "aws-amplify";
+import aws_exports from "../aws-exports";
+Auth.configure(aws_exports);
 
-function LoginCard() {
+function LoginCard({ signOut }) {
   return (
-    <Card>
-      <Card.Header as="h5">Welcome back</Card.Header>
-      <Card.Body>
-        <Card.Title>Login to Account</Card.Title>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          </Form.Group>
-        </Form>
-        <Button variant="primary">Sign in</Button>
-      </Card.Body>
-    </Card>
+    <View className="App">
+      <Card>
+        <Heading level={1}>We now have Auth!</Heading>
+      </Card>
+      <Button onClick={signOut}>Sign Out</Button>
+    </View>
   );
 }
 
-export default LoginCard;
+export default  withAuthenticator(LoginCard);

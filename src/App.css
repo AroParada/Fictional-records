@@ -1,0 +1,12 @@
+.amplify-button--primary {
+    border-width: var(--amplify-components-button-primary-border-width);
+    background-color: black;
+    border-color: var(--amplify-components-button-primary-border-color);
+    color: var(--amplify-components-button-primary-color);
+    --amplify-internal-button-disabled-border-color: var( --amplify-components-button-primary-disabled-border-color );
+    --amplify-internal-button-disabled-background-color: var( --amplify-components-button-primary-disabled-background-color );
+    --amplify-internal-button-disabled-color: var( --amplify-components-button-primary-disabled-color );
+    --amplify-internal-button-loading-background-color: var( --amplify-components-button-primary-loading-background-color );
+    --amplify-internal-button-loading-border-color: var( --amplify-components-button-primary-loading-border-color );
+    --amplify-internal-button-loading-color: var( --amplify-components-button-primary-loading-color );
+}
