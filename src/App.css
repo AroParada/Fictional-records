@@ -10,3 +10,15 @@
     --amplify-internal-button-loading-border-color: var( --amplify-components-button-primary-loading-border-color );
     --amplify-internal-button-loading-color: var( --amplify-components-button-primary-loading-color );
 }
+
+/* Amplify login card css */
+[data-amplify-authenticator][data-variation=modal] {
+    overflow-y: auto;
+    width: var(--amplify-components-authenticator-modal-width);
+    height: var(--amplify-components-authenticator-modal-height);
+    background-color: inherit !important;
+    position: inherit !important;
+    top: var(--amplify-components-authenticator-modal-top);
+    left: var(--amplify-components-authenticator-modal-left);
+    z-index: 1;
+}

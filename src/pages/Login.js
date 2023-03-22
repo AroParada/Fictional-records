@@ -1,4 +1,6 @@
 
+import LoginCard from "../components/LoginCard";
+
 export function Login() {
-     return <h1>login</h1>
+  return <LoginCard />
 }
