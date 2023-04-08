@@ -7,12 +7,15 @@ function Navbar() {
         <ul>
           <li>
             <Link to="/">Home</Link>
-          </li>  
+          </li>
           <li>
-            <Link to="/Login">Login</Link>
+            <Link to="/Shop">Shop</Link>
           </li>
           <li>
             <Link to="/Contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/Login">Login</Link>
           </li>
         </ul>
       </nav>

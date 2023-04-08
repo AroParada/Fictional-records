@@ -1,0 +1,16 @@
+{
+  "resourceName": "RecordImages",
+  "policyUUID": "0d42ae72",
+  "bucketName": "fictionalrecords004232c4232647c6a10668cb4de31c1",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

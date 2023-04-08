@@ -1,3 +1,5 @@
+import FigureExample from "../components/Featured";
+
 export function Home() {
-  return <h1>Home</h1>;
+  // return <FigureExample/>;
 }
