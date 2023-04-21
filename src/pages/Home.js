@@ -1,7 +1,5 @@
-import FigureExample from "../components/Featured";
+import Slider from "../components/Slider";
 
 export function Home() {
-  // return <FigureExample/>;
-  return 
-    <h1>Home</h1>;
+  return <Slider />
 }
