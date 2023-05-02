@@ -14,8 +14,9 @@ function LoginCard({ signOut }) {
   return (
     <View className="App">
       <Card>
-        <Heading level={1}>We now have Auth!</Heading>
+        <Heading level={1}>You are logged In!</Heading>
       </Card>
+      <Card variation="elevated">I'm a card!</Card>
       <Button onClick={signOut}>Sign Out</Button>
     </View>
   );

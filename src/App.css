@@ -1,4 +1,4 @@
-.amplify-button--primary {
+/* .amplify-button--primary {
     border-width: var(--amplify-components-button-primary-border-width);
     background-color: black;
     border-color: var(--amplify-components-button-primary-border-color);
@@ -9,7 +9,7 @@
     --amplify-internal-button-loading-background-color: var( --amplify-components-button-primary-loading-background-color );
     --amplify-internal-button-loading-border-color: var( --amplify-components-button-primary-loading-border-color );
     --amplify-internal-button-loading-color: var( --amplify-components-button-primary-loading-color );
-}
+} */
 
 /* Amplify login card css */
 [data-amplify-authenticator][data-variation=modal] {
@@ -43,17 +43,20 @@ body {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: gainsboro !important;
+
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 350px !important;
-  height: 350px !important;
+  width: 400px !important;
+  height: 400px !important;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+  height: 100% !important;
 }
 
