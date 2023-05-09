@@ -6,7 +6,7 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import  NavBar  from "./NavBar"
 import { Contact } from "./pages/Contact";
-import { Shop } from "./pages/Shop";
+import  Shop  from "./pages/Shop";
 
 function App() {
   return (

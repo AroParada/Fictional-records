@@ -22,4 +22,4 @@ function LoginCard({ signOut }) {
   );
 }
 
-export default  withAuthenticator(LoginCard);
+export default withAuthenticator(LoginCard);

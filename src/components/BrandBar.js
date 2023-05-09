@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import { Button } from "@aws-amplify/ui-react"
 
 function BrandBar() {
   return (
@@ -17,6 +18,7 @@ function BrandBar() {
             Fiction Books & records
           </Navbar.Brand>
         </Container>
+        <Button>Cart 0 Items</Button>
       </Navbar>
     </>
   );
