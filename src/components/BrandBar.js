@@ -1,8 +1,14 @@
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import { Button } from "@aws-amplify/ui-react"
+import {Button, Container, Navbar, Modal} from 'react-bootstrap';
+// import { Button } from "@aws-amplify/ui-react"
+import {useState} from 'react';
 
 function BrandBar() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -18,8 +24,16 @@ function BrandBar() {
             Fiction Books & records
           </Navbar.Brand>
         </Container>
-        <Button>Cart 0 Items</Button>
+        <Button onClick={handleShow}>Cart 0 Items</Button>
       </Navbar>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Shopping Cart</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h1>This is the cart</h1>
+        </Modal.Body>
+      </Modal>
     </>
   );
 }
