@@ -3,6 +3,7 @@ import {Button, Container, Navbar, Modal} from 'react-bootstrap';
 import {useState} from 'react';
 
 function BrandBar() {
+// show or hide modal
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
