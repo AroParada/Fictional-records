@@ -13,12 +13,17 @@ export const CartContext = createContext({
 export function CartProvider({children}) {
     const [cartProducts, setCartProducts] =useState([]);
 
+
+    // [  { id: 1 , quantity: 2 } ]
     function getProductQuantity(id){
+        // if the .find get an undefined bject we wont ask for the .quantity to aviod error
         cartProducts.find(product => product.id === id)?.quantity
         
         if (quantity == undefined) {
             return 0;
         }
+
+        return quantity
     }
 
     const contextValue = {
