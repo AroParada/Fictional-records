@@ -50,6 +50,23 @@ export function CartProvider({ children }) {
     }
   }
 
+  function removeOneFromCart(id) {
+    const quantity = getProductQuantity(id);
+
+    if(quantity == 1) {
+        deleteFromCart(id);
+    } else {
+        setCartProducts(
+          cartProducts.map(
+            (product) =>
+              product.id === id // if condition
+                ? { ...product, quantity: product.quantity - 1 } // if statement is true ( turnary statement )
+                : product // if statement is false
+          )
+        );
+    }
+  }
+
   function deleteFromCart(id) {
     // filter [] if an object meets a condition, add the object to array
     setCartProducts(cartProducts =>
