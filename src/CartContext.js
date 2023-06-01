@@ -26,8 +26,33 @@ export function CartProvider({children}) {
         return quantity
     }
 
+    function addOnetoCart(id) {
+        const quantity = getProductQuantity(id);
+
+        if (quantity === 0) {  // product is not in cart
+            setCartProducts(
+                [
+                    ...cartProducts,
+                    {
+                        id: id,
+                        quantity: 1
+                    }
+                ]
+            )
+        } else { // product is in cart
+            setCartProducts(
+                cartProducts.map(
+                    product => 
+                    product.id === id                             // if condition
+                    ? {...product,quantity: product.quantity +1 } // if statement is true ( turnary statement )
+                    : product                                     // if statement is false
+                )
+            )
+        }
+    }
+  
     const contextValue = {
-      items: cartProducts  ,
+      items: cartProducts,
       getProductQuantity,
       addOnetoCart,
       removeOneFromCart,
