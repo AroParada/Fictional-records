@@ -16,7 +16,7 @@ export function CartProvider({ children }) {
   // [  { id: 1 , quantity: 2 } ]
   function getProductQuantity(id) {
     // if the .find get an undefined bject we wont ask for the .quantity to aviod error
-    cartProducts.find((product) => product.id === id)?.quantity;
+    const quantity = cartProducts.find(product => product.id === id)?.quantity
 
     if (quantity == undefined) {
       return 0;
@@ -98,6 +98,8 @@ export function CartProvider({ children }) {
     <CartContext.Provider value={contextValue}>{children}</CartContext.Provider>
   );
 }
+
+export default CartProvider;
 
 // Content (cart, addToCart, removeCart)
 // Provider -> gives react app access to all the things in your context
