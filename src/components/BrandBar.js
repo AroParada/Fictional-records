@@ -1,14 +1,16 @@
 import {Button, Container, Navbar, Modal} from 'react-bootstrap';
 // import { Button } from "@aws-amplify/ui-react"
-import {useState} from 'react';
+import {useState, useContext} from 'react';
+import { CartContext } from '../CartContext';
 
 function BrandBar() {
+  const cart = useContext(CartContext);
 // show or hide modal
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
+const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
 
   return (
     <>
@@ -25,7 +27,7 @@ function BrandBar() {
             Fiction Books & records
           </Navbar.Brand>
         </Container>
-        <Button onClick={handleShow}>Cart 0 Items</Button>
+        <Button onClick={handleShow}>Cart ({productsCount}) Items</Button>
       </Navbar>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
