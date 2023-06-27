@@ -1,18 +1,18 @@
 const productsArray = [
   {
-    id: "1",
+    id: "price_1NNNJzG7tgpxAxuReHdJ9uLu",
     title: "OK Computer",
     artist: "Radiohead",
     price: 12.99,
   },
   {
-    id: "2",
+    id: "price_1NNNOiG7tgpxAxuRO0q8ZNd4",
     title: "Painting Pictures",
     artist: "Kodak Black",
     price: 12.99,
   },
   {
-    id: "3",
+    id: "price_1NNNREG7tgpxAxuREz2wWRsl",
     title: "Diamond Eyes",
     artist: "Deftones",
     price: 12.99,
