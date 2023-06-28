@@ -18,7 +18,7 @@ function BrandBar() {
         'Content-type': 'application/json'
       },
       body: JSON.stringify({items: cart.items})
-    } ).then((reponse) => {
+    } ).then((response) => {
       return response.json();
     }).then((response) => {
       if(response.url) {
