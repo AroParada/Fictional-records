@@ -18,7 +18,7 @@ function BrandBar() {
         'Content-type': 'application/json'
       },
       body: JSON.stringify({items: cart.items})
-    } ).then((reponse) => {
+    } ).then((response) => {
       return response.json();
     }).then((response) => {
       if(response.url) {
@@ -36,7 +36,7 @@ function BrandBar() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src="/logo.svg"
