@@ -6,12 +6,12 @@ const Footer = () => {
     <footer className="bg-dark text-light mt-5">
       <Container>
         <Row>
-          <Col md={6}>
+          <Col className="mt-3" md={6}>
             <h5>Contact Us</h5>
             <p>Email: info@example.com</p>
             <p>Phone: +1 (123) 456-7890</p>
           </Col>
-          <Col md={6}>
+          <Col className="mt-3" md={6}>
             <h5>Follow Us</h5>
             <p>Facebook | Twitter | Instagram</p>
           </Col>
