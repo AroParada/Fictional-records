@@ -37,7 +37,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://fictionalrecords004232c4232647c6a10668cb4de31c163357-staging.s3.amazonaws.com/107347-597a0e4334ba6-l.jpg" />
-        <h3>hhjtytgyghg</h3>
+        <h3></h3>
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://fictionalrecords004232c4232647c6a10668cb4de31c163357-staging.s3.amazonaws.com/61Z-qRw050L._SL1076_.jpg" />

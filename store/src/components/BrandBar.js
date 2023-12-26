@@ -37,14 +37,14 @@ function BrandBar() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">
-            <img
+            {/* <img
               alt=""
               src="/logo.svg"
               width="30"
               height="30"
               className="d-inline-block align-top"
-            />{" "}
-            Fiction Books & records
+            />{" "} */}
+            Fiction Books & records &#128216;
           </Navbar.Brand>
         </Container>
         <Button onClick={handleShow}>Cart ({productsCount}) Items</Button>
@@ -66,7 +66,9 @@ function BrandBar() {
               ))}
               {/* tofixed adds only 2 values after the decimal */}
               <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
-              <Button variant="success" onClick={checkout}>Purchase items</Button>
+              <Button variant="success" onClick={checkout}>
+                Purchase items
+              </Button>
             </>
           ) : (
             <h1>There are no items in your cart!</h1>
