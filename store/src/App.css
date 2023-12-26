@@ -44,14 +44,14 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: gainsboro !important;
-
+  padding: 40px !important;
 }
 
 .swiper-slide {
   background-position: center;
-  background-size: cover;
-  width: 400px !important;
-  height: 400px !important;
+  background-size: auto;
+  width: 300px !important;
+  height: 300px !important;
 }
 
 .swiper-slide img {
