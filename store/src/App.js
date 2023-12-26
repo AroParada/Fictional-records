@@ -9,20 +9,22 @@ import { Contact } from "./pages/Contact";
 import  Shop  from "./pages/Shop";
 import CartProvider from "./CartContext";
 import { Container } from "react-bootstrap";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <CartProvider>
       {/* <Container> */}
-        <BrandBar />
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Shop" element={<Shop />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} />
-        </Routes>
+      <BrandBar />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Shop" element={<Shop />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Login" element={<Login />} />
+      </Routes>
       {/* </Container> */}
+      <Footer />
     </CartProvider>
   );
 }
