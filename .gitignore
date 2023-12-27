@@ -43,3 +43,13 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+
+# .gitignore
+
+# Exclude npm lock file
+package-lock.json
+
+# OR
+
+# Exclude Yarn lock file
+yarn.lock
