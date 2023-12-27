@@ -22,6 +22,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
+# .gitignore
+
+# Exclude npm lock file
+package-lock.json
+
+# OR
+
+# Exclude Yarn lock file
+yarn.lock
+
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
 amplify/.config/local-*
@@ -43,13 +54,3 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
-
-# .gitignore
-
-# Exclude npm lock file
-package-lock.json
-
-# OR
-
-# Exclude Yarn lock file
-yarn.lock
