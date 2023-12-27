@@ -14,7 +14,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <CartProvider>
-      {/* <Container> */}
       <BrandBar />
       <NavBar />
       <Routes>
@@ -23,7 +22,6 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
-      {/* </Container> */}
       <Footer />
     </CartProvider>
   );
