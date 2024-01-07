@@ -8,8 +8,8 @@ import  NavBar  from "./NavBar"
 import { Contact } from "./pages/Contact";
 import  Shop  from "./pages/Shop";
 import CartProvider from "./CartContext";
-import { Container } from "react-bootstrap";
 import Footer from "./components/Footer";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
+        <Route exact path="/Admin" element={<PrivateRoute />} />
       </Routes>
       <Footer />
     </CartProvider>
