@@ -1,24 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Auth } from "aws-amplify";
 import { Admin } from "../pages/Admin";
+import  AdminAuth  from '../auth/AdminAuth';
 
 const PrivateRoute = () => {
-const [isAuthenticated, setIsAuthenticated] = useState(false);
-  
-  useEffect(() => {
-    checkAuthentication();
-  }, []);
-
-  const checkAuthentication = async () => {
-    try {
-      const user = await Auth.currentAuthenticatedUser();
-      setIsAuthenticated(true)
-      console.log('User:', user);
-    } catch (err) {
-      setIsAuthenticated(false);
-      console.error('User not authenticated:', err);
-    }
-  };
+// gets state of isAuthenticated from AdminAuth
+const { isAuthenticated } = AdminAuth();
 
   return (
     <div>
