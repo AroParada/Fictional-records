@@ -18,7 +18,7 @@ export function CartProvider({ children }) {
     // if the .find get an undefined bject we wont ask for the .quantity to aviod error
     const quantity = cartProducts.find(product => product.id === id)?.quantity
 
-    if (quantity == undefined) {
+    if (quantity === undefined) {
       return 0;
     }
 
@@ -53,7 +53,7 @@ export function CartProvider({ children }) {
   function removeOneFromCart(id) {
     const quantity = getProductQuantity(id);
 
-    if(quantity == 1) {
+    if(quantity === 1) {
         deleteFromCart(id);
     } else {
         setCartProducts(
@@ -71,7 +71,7 @@ export function CartProvider({ children }) {
     // filter [] if an object meets a condition, add the object to array
     setCartProducts(cartProducts =>
       cartProducts.filter(currentProduct => {
-        return currentProduct.id != id;
+        return currentProduct.id !== id;
       })
     );
   }
