@@ -13,7 +13,6 @@ import "../App.css";
 import { EffectCoverflow, Pagination } from "swiper";
 
 export default function App() {
-
   // Calculate the index of the middle slide
   const totalSlides = 8; // Change this to the total number of slides
   const middleIndex = Math.floor(totalSlides / 2);
@@ -35,7 +34,7 @@ export default function App() {
         }}
         pagination={false}
         modules={[EffectCoverflow, Pagination]}
-        initialSlide={middleIndex -1}
+        initialSlide={middleIndex - 1}
         className="mySwiper"
       >
         <SwiperSlide>

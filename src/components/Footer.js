@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light mt-5">
-      <Container>
-        <Row>
+    <footer className="bg-dark text-light footer">
+      <Container className="d-flex flex-column">
+        <Row className="flex-grow-1">
           <Col className="mt-3" md={6}>
             <h5>Contact Us</h5>
             <p>Email: info@example.com</p>
@@ -16,8 +16,8 @@ const Footer = () => {
             <p>Facebook | Twitter | Instagram</p>
           </Col>
         </Row>
-        <Row className="mt-3">
-          <Col>
+        <Row>
+          <Col className="mt-3">
             <p>&copy; 2023 Your Company. All rights reserved.</p>
           </Col>
         </Row>

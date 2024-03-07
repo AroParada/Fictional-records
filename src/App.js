@@ -13,18 +13,22 @@ import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
-    <CartProvider>
-      <BrandBar />
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Shop" element={<Shop />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Login" element={<Login />} />
-        <Route exact path="/Admin" element={<PrivateRoute />} />
-      </Routes>
-      <Footer />
-    </CartProvider>
+    <div className="app-wrapper">
+      <CartProvider>
+        <BrandBar />
+        <NavBar />
+        <main className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Shop" element={<Shop />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Login" element={<Login />} />
+            <Route exact path="/Admin" element={<PrivateRoute />} />
+          </Routes>
+        </main>
+        <Footer />
+      </CartProvider>
+    </div>
   );
 }
 

@@ -44,7 +44,7 @@ function BrandBar() {
               height="30"
               className="d-inline-block align-top"
             />{" "} */}
-            Fiction Books & records &#128216;
+            Storyline Records &#128216;
           </Navbar.Brand>
         </Container>
         <Button onClick={handleShow}>Cart ({productsCount}) Items</Button>
