@@ -1,46 +1,47 @@
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import live from '../assets/130907063709-23-punk-history-restricted.jpg'
+import Live from '../assets/130907063709-23-punk-history-restricted.jpg'
+import Merchandise from '../assets/dbbf3a60c162a140f29a630964f9b516.jpg'
+import Books from '../assets/overflowing-bookcases.jpg'
 
 function GridExample() {
   return (
-    <Row xs={1} md={3} >
-      <Col>
+    <Row xs={1} sm={4} className="justify-content-center">
+      <Col className="mx-3 mb-4">
         <Card>
-          <Card.Img
-            variant="top"
-            src={live}
-          />
+          <Card.Img variant="top" src={Live} />
           <Card.Body>
-            <Card.Title>Card</Card.Title>
+            <Card.Title>Live Events</Card.Title>
           </Card.Body>
         </Card>
       </Col>
       <Col
-      // key={idx}
+        className="mx-3 mb-4"
+        // key={idx}
       >
         <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Img variant="top" src={Merchandise} />
           <Card.Body>
-            <Card.Title>Card</Card.Title>
+            <Card.Title>Merchandise</Card.Title>
           </Card.Body>
         </Card>
       </Col>
       <Col
-      // key={idx}
+        className="mx-3 mb-4"
+        // key={idx}
       >
         <Card>
-          <Card.Img
-            variant="top"
-            src="../assets/17982395716_159af18a94_b.jpg"
-          />
+          <Card.Img variant="top" src={Books} />
           <Card.Body>
-            <Card.Title>Card</Card.Title>
+            <Card.Title>Used Books</Card.Title>
           </Card.Body>
         </Card>
       </Col>
     </Row>
+    // <div>
+
+    // </div>
   );
 }
 
