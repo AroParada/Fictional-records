@@ -31,6 +31,10 @@ export function Admin() {
                   <Form.Label>Price</Form.Label>
                   <Form.Control type="price" placeholder="Price" />
                 </Form.Group>
+                <Form.Group className="mb-3" controlId="formFile">
+                  <Form.Label>Image</Form.Label>
+                  <Form.Control type="file" />
+                </Form.Group>
                 <Button variant="primary" type="submit">
                   Submit
                 </Button>
