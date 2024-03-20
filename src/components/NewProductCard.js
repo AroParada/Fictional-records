@@ -28,7 +28,7 @@ function NewProductCard(props) {
           <Text fontSize="large" fontWeight="semibold">
             {product.title}
           </Text>
-          <Text color="font.tertiary">Product description</Text>
+          <Text color="font.tertiary">{product.artist}</Text>
           <Text fontSize="large" color="secondary">
             ${product.price}
           </Text>
