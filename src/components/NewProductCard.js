@@ -17,7 +17,7 @@ function NewProductCard(props) {
     <Card variation="elevated">
       <Flex alignItems="flex-start">
         <Image
-          src="https://fictionalrecords004232c4232647c6a10668cb4de31c163357-staging.s3.amazonaws.com/107347-597a0e4334ba6-l.jpg"
+          src= {product.image}
           alt="Amplify"
           width="8rem"
         />

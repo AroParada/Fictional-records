@@ -15,6 +15,7 @@ function ProductCard(props) {
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>${product.price}</Card.Text>
+        <h1>heheheheh</h1>
         {productQuantity > 0 ? (
           <>
             <Form as={Row}>
