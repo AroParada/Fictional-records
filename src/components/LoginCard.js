@@ -14,10 +14,11 @@ function LoginCard({ signOut }) {
   return (
     <View className="App">
       <Card>
-        <Heading level={1}>You are logged In!</Heading>
+        <Heading className='mb-5' level={1}>
+          You are logged In!
+        </Heading>
+        <Button onClick={signOut}>Sign Out</Button>
       </Card>
-      <Card variation="elevated">I'm a card!</Card>
-      <Button onClick={signOut}>Sign Out</Button>
     </View>
   );
 }
