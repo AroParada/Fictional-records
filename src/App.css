@@ -73,3 +73,7 @@ body {
 .content {
   flex-grow: 1;
 }
+
+.modal {
+  backdrop-filter: blur(4px);
+}

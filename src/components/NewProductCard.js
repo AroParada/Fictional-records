@@ -14,7 +14,7 @@ function NewProductCard(props) {
   console.log(cart.items);
 
   return (
-    <Card variation="elevated">
+    <Card class='elevatedCard' variation="elevated">
       <Flex alignItems="flex-start">
         <Image
           src= {product.image}
