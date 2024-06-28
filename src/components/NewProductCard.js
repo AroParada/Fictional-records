@@ -11,10 +11,9 @@ function NewProductCard(props) {
   // to access the cart object
   const cart = useContext(CartContext);
   const productQuantity = cart.getProductQuantity(product.id);
-  console.log(cart.items);
 
   return (
-    <Card class='elevatedCard' variation="elevated">
+    <Card variation="elevated">
       <Flex alignItems="flex-start">
         <Image
           src= {product.image}

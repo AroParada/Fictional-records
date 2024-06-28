@@ -1,20 +1,18 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
 function Navbar() {
   return (
     <Nav fill variant="tabs">
       <Nav.Item>
-        <Nav.Link href="/">Home</Nav.Link>
+        <NavLink to="/"> Home</NavLink>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1" href="/Shop">
-          Shop
-        </Nav.Link>
+        <NavLink to="/Shop">Shop</NavLink>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/Login">Login</Nav.Link>
+        <NavLink to="/Login">Login</NavLink>
       </Nav.Item>
     </Nav>
   );

@@ -5,6 +5,5 @@ export function Home() {
   return <div>
     <Slider />
     <Featured />
-
     </div>
 }
