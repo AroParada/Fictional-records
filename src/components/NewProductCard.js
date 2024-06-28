@@ -1,9 +1,8 @@
 import { Form, Row, Col } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
-import { Card, Button, Flex, Image, Badge, Text } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
-
+import { Card, Button, Flex, Image, Badge, Text } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
 
 function NewProductCard(props) {
   //props.product is the product we are selling
@@ -15,11 +14,7 @@ function NewProductCard(props) {
   return (
     <Card variation="elevated">
       <Flex alignItems="flex-start">
-        <Image
-          src= {product.image}
-          alt="Amplify"
-          width="8rem"
-        />
+        <Image src={product.image} alt="Amplify" width="8rem" />
         <Flex direction="column" gap="xs">
           <Flex>
             <Badge variation="success">New</Badge>
@@ -37,20 +32,22 @@ function NewProductCard(props) {
                 <Form.Label column="true" sm="6">
                   In Cart: {productQuantity}{" "}
                 </Form.Label>
-                <Col sm="6">
-                  <Button
-                    sm="6"
-                    onClick={() => cart.addOneToCart(product.id)}
-                    className="mx-2"
-                  >
-                    +
-                  </Button>
+                <Col sm="3">
                   <Button
                     sm="6"
                     onClick={() => cart.removeOneFromCart(product.id)}
                     className="mx-2"
                   >
                     -
+                  </Button>
+                </Col>
+                <Col sm="3">
+                  <Button
+                    sm="6"
+                    onClick={() => cart.addOneToCart(product.id)}
+                    className="mx-2"
+                  >
+                    +
                   </Button>
                 </Col>
               </Form>
@@ -78,7 +75,8 @@ function NewProductCard(props) {
 
 export default NewProductCard;
 
-{/* <Card variation="elevated">
+{
+  /* <Card variation="elevated">
   <Flex alignItems="flex-start">
     <Image src="/amplify-placeholder.svg" alt="Amplify" width="8rem" />
     <Flex direction="column" gap="xs">
@@ -105,4 +103,5 @@ export default NewProductCard;
       </Flex>
     </Flex>
   </Flex>
-</Card>; */}
+</Card>; */
+}
