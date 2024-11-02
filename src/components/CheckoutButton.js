@@ -2,6 +2,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { useContext } from "react";
 import { CartContext } from "../CartContext";
 
+
 const stripePromise = loadStripe(
   process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY
 );
